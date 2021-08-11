@@ -117,3 +117,5 @@ const uniq = uniqObjectsInArray(original, "text") // uniq be "text" key
 console.log(uniq) //expect [{ id: 3, text: 'hi!' }, { id: 2, text: 'hello' }
 ```
 
+## Developing:
+Run `docker-compose up`
