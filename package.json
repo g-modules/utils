@@ -1,6 +1,6 @@
 {
 	"name": "@g-modules/utils",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Simple helper functions.",
 	"author": "Constantine Gololobov <hello@gololobov.dev> (https://gololobov.dev)",
 	"license": "MIT",

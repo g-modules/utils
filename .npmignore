@@ -1,8 +1,11 @@
 /coverage
 /tests
+.github
 .babelrc
 .eslintrc.json
 .editorconfig
+.dockerignore
 jest.config.json
+Icon?
 Dockerfile
 docker-compose.yml
