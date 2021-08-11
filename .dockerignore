@@ -1,4 +1,6 @@
 /coverage
+*.log
 .git
 .cache
-*.log
+Icon?
+.DS_Store

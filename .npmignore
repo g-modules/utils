@@ -1,11 +1,15 @@
 /coverage
 /tests
+*.log
+.git
 .github
+.cache
 .babelrc
 .eslintrc.json
 .editorconfig
 .dockerignore
 jest.config.json
-Icon?
 Dockerfile
 docker-compose.yml
+.DS_Store
+Icon?
