@@ -9,14 +9,14 @@ npm install @g-modules/utils
 
 ### Import all functions
 ```js
-import utils from "g-modules/utils"
+import utils from "@g-modules/utils"
 
 const random = utils.randomNumber()
 ```
 
 ### Import some functions
 ```js
-import { randomNumber, randomBool } from "g-modules/utils"; // import some modules
+import { randomNumber, randomBool } from "@g-modules/utils"; // import some modules
 
 const random = randomNumber()
 ```
@@ -28,7 +28,7 @@ Return a random value between the minimum and maximum numbers, inclusive them.
 Params by default is **0** and **100**: `randomNumber(0,100)`.
 
 ```js
-import { randomNumber } from "g-modules/utils";
+import { randomNumber } from "@g-modules/utils";
 
 const withoutParams = randomNumber();
 console.log(withoutParams); // expect number between 0 and 100
@@ -46,7 +46,7 @@ Can be used with chance param, between **0** and **100**, where 0 is always `fal
 Default param: `randomBool(50)`.
 
 ```js
-import { randomBool } from "g-modules/utils";
+import { randomBool } from "@g-modules/utils";
 
 const withoutParams = randomBool();
 console.log(withoutParams); // expect true with 50% chance
@@ -64,7 +64,7 @@ console.log(chance100); // expect true with 100% chance
 Return ID in GUID format (random): `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`
 
 ```js
-import { randomId } from "g-modules/utils";
+import { randomId } from "@g-modules/utils";
 
 const id = randomId();
 console.log(id); // expect id string (9bf8ff26-cca2-efa4-a1dc-9ce2928b0770)
@@ -76,7 +76,7 @@ console.log(id); // expect id string (9bf8ff26-cca2-efa4-a1dc-9ce2928b0770)
 Uppercasing first letter:
 
 ```js
-import { uppercaseFirstLetter } from "g-modules/utils";
+import { uppercaseFirstLetter } from "@g-modules/utils";
 
 const original = "hello world!"
 const uppercasing = uppercaseFirstLetter(original)
@@ -89,7 +89,7 @@ console.log(uppercasing); // expect "Hello world!"
 Shuffling passed array (Durstenfeld shuffle).
 
 ```js
-import { shuffleArray } from "g-modules/utils";
+import { shuffleArray } from "@g-modules/utils";
 
 const original = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 const shuffled = shuffleArray(original)
@@ -102,7 +102,7 @@ console.log(shuffled) //expect [5, 4, 6, 9, 2, 8, 7, 1, 3, 0]
 Leave only unique objects in the array.
 
 ```js
-import { uniqObjectsInArray } from "g-modules/utils";
+import { uniqObjectsInArray } from "@g-modules/utils";
 
 const original = [
 	{id: 1, text: "hi!"},
