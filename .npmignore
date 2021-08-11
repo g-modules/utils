@@ -1,0 +1,8 @@
+/coverage
+/tests
+.babelrc
+.eslintrc.json
+.editorconfig
+jest.config.json
+Dockerfile
+docker-compose.yml

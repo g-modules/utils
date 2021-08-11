@@ -1,0 +1,11 @@
+{
+	"extends": [
+		"@g-modules/eslint-config"
+	],
+	"rules": {
+		"no-mixed-operators": ["error", {"groups": [["&&", "||", "?:"]]}],
+		"no-magic-numbers": 0,
+		"id-length": ["error", { "min": 4, "properties": "never" , "exceptions": ["a", "b", "c", "x", "y", "i", "l", "key", "id"]}],
+		"newline-per-chained-call": ["error", {"ignoreChainWithDepth": 3}]
+	}
+}

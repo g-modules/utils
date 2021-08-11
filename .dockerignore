@@ -1,0 +1,4 @@
+/coverage
+.git
+.cache
+*.log
