@@ -31,7 +31,6 @@ const shuffleArray = ( array ) => {
 	return shuffled;
 };
 
-
 // return only uniq Objects in Array, by object key
 const uniqObjectsInArray = ( array, key ) => [...new Map( array.map( item => [item[key], item]) ).values()];
 
