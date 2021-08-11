@@ -1,6 +1,7 @@
 # Utils - Simple functions
 
 [![CodeQL](https://github.com/g-modules/utils/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/g-modules/utils/actions/workflows/codeql-analysis.yml)
+[![codecov](https://codecov.io/gh/g-modules/utils/branch/main/graph/badge.svg?token=8ODTB8KXGN)](https://codecov.io/gh/g-modules/utils)
 
 <p align="center">
 Important! This module use ES6 import/exports syntax.
