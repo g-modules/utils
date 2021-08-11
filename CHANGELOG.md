@@ -1,3 +1,15 @@
+## 1.0.1 (2021-08-11)
+
+### :wrench: &nbsp; Small Fixes
+
+---
+
+## 1.0.1 (2021-08-11)
+
+### :wrench: &nbsp; Small Fixes
+
+---
+
 ## 1.0.0 (2021-08-11)
 
 ### :rocket: &nbsp; Basic Functions:
