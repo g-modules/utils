@@ -18,6 +18,7 @@ jobs:
       with:
         node-version: '16.x'
         cache: 'npm'
+        registry-url: 'https://registry.npmjs.org'
     - name: Install Dependencies
       run: npm install
     - name: Run ESLint Fix
@@ -29,8 +30,16 @@ jobs:
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
         flags: unittests
-    - name: Publish to NPM
+    - name: Publish to npm
       run: npm publish --access public
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+    - name: Publish to GitHub Packages
+      uses: actions/setup-node@v2
+      with:
+        registry-url: 'https://npm.pkg.github.com'
+        scope: '@g-modules'
+      run: npm publish
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
