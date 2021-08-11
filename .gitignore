@@ -1,0 +1,4 @@
+node-modules
+*.log
+Icon?
+.DS_Store
