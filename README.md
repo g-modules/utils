@@ -1,5 +1,6 @@
-# Utils
-Simple helper functions.
+# Utils - Simple functions
+
+[![CodeQL](https://github.com/g-modules/utils/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/g-modules/utils/actions/workflows/codeql-analysis.yml)
 
 ## Installation and Usage
 ```bash
