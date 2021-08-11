@@ -2,10 +2,13 @@
 
 [![CodeQL](https://github.com/g-modules/utils/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/g-modules/utils/actions/workflows/codeql-analysis.yml)
 
+*** Important! This module use ES6 import/exports syntax. ***
+
 ## Installation and Usage
 ```bash
 npm install @g-modules/utils
 ```
+Also you need to have `"type": "module"` enavled in your package.json.
 
 ### Import all functions
 ```js
