@@ -26,6 +26,7 @@ jobs:
         with:
           registry-url: 'https://npm.pkg.github.com'
           scope: '@g-modules'
+      - run: npm install
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
