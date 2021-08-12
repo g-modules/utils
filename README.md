@@ -1,7 +1,8 @@
 # Utils - Simple functions
 
 [![CodeQL](https://github.com/g-modules/utils/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/g-modules/utils/actions/workflows/codeql-analysis.yml)&nbsp;
-[![codecov](https://codecov.io/gh/g-modules/utils/branch/main/graph/badge.svg?token=8ODTB8KXGN)](https://codecov.io/gh/g-modules/utils)
+[![codecov](https://codecov.io/gh/g-modules/utils/branch/main/graph/badge.svg?token=8ODTB8KXGN)](https://codecov.io/gh/g-modules/utils)&nbsp;
+[![codebeat badge](https://codebeat.co/badges/86dc211f-0a82-43a1-84de-695c76d2d9d1)](https://codebeat.co/projects/github-com-g-modules-utils-dev)
 
 ## :heavy_exclamation_mark: Important! This module use ES6 import/exports syntax.
 

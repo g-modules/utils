@@ -1,4 +1,12 @@
-## 1.0.1 (2021-08-11)
+## 1.0.3 (2021-08-12)
+
+### :wrench: &nbsp; Minor Fixes
+  * CI/CD Integration
+  * Added GitHub Packages
+
+---
+
+## 1.0.2 (2021-08-11)
 
 ### :wrench: &nbsp; Small Fixes
 
