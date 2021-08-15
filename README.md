@@ -131,5 +131,22 @@ const element = randomElement(array)
 console.log(element) //expect Vue or React or Angular
 ```
 
+---
+
+### randomKey()
+Return random key from Object.
+
+```js
+import { randomKey } from "@g-modules/utils";
+
+const object = {
+	"1": "One",
+	"2": "Two",
+	"3": "Three"
+};
+const key = randomKey(object)
+console.log(key) //expect "1" or "2" or "3"
+```
+
 ## Developing:
 Run `docker-compose up`
