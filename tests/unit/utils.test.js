@@ -69,6 +69,11 @@ describe( "shuffleArray():", () => {
 	test( "should return an array of same size", () => expect( result ).toBeArrayOfSize( originalArray.length ) );
 	test( "should return an array that contain all original values", () => expect( result ).toIncludeAllMembers( originalArray ) );
 	test( "shouldn't return unchanged array", () => expect( result ).not.toEqual( originalArray ) );
+	test( "should throw an error when not an array passing", () => {
+		expect( () => {
+			shuffleArray( 42 );
+		}).toThrow();
+	});
 });
 
 describe( "uniqObjectsInArray():", () => {

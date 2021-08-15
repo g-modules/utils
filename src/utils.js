@@ -23,6 +23,7 @@ const uppercaseFirstLetter = ( string = "" ) => {
 
 // shuffle Array (Durstenfeld shuffle)
 const shuffleArray = ( array ) => {
+	if ( !Array.isArray( array ) ) throw new Error( "Passed param is not an Array" );
 	const shuffled = array.slice( 0 );
 	for ( let l = shuffled.length - 1; l > 0; l-- ) {
 		const i = Math.floor( Math.random() * ( l + 1 ) );
@@ -36,7 +37,7 @@ const uniqObjectsInArray = ( array, key ) => [...new Map( array.map( item => [it
 
 // random element from Array
 const randomElement = ( array ) => {
-	if ( typeof array !== "object" ) throw new Error( "Passed param is not an Array" );
+	if ( !Array.isArray( array ) ) throw new Error( "Passed param is not an Array" );
 	const index = randomNumber( 0, array.length - 1 );
 	return array[index];
 };
@@ -54,4 +55,15 @@ const randomValue = ( object ) => {
 	return object[randomKey( object )];
 };
 
-export { randomNumber, randomBool, randomId, uppercaseFirstLetter, shuffleArray, uniqObjectsInArray, randomElement, randomKey, randomValue };
+
+export {
+	randomNumber,
+	randomBool,
+	randomId,
+	uppercaseFirstLetter,
+	shuffleArray,
+	uniqObjectsInArray,
+	randomElement,
+	randomKey,
+	randomValue
+};
