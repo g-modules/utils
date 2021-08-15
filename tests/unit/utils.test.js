@@ -1,5 +1,5 @@
 /* global describe, beforeEach, test, expect */
-import { randomNumber, randomBool, randomId, uppercaseFirstLetter, shuffleArray, uniqObjectsInArray } from "../../src/utils.js";
+import { randomNumber, randomBool, randomId, uppercaseFirstLetter, shuffleArray, uniqObjectsInArray, randomElement, randomKey, randomValue } from "../../src/utils.js";
 
 
 describe( "randomNumber():", () => {
@@ -91,5 +91,46 @@ describe( "uniqObjectsInArray():", () => {
 	test( "should return an array", () => expect( result ).toBeArray() );
 	test( "should return an array that contain any original objects", () => expect( result ).toIncludeAnyMembers( originalArray ) );
 	test( "should return same array, if value uniq", () => expect( uniqObjectsInArray( originalArray, "id" ) ).toEqual( originalArray ) );
+});
+
+describe( "randomElement():", () => {
+	const array = [1, 2, 3, 4, 5];
+	const result = randomElement( array );
+	test( "should return a number", () => expect( result ).toBeNumber() );
+	test( "should throw an error when not an array passing", () => {
+		expect( () => {
+			randomElement( 42 );
+		}).toThrow();
+	});
+});
+
+describe( "randomKey():", () => {
+	const object = {
+		"1": "One",
+		"2": "Two",
+		"3": "Three"
+	};
+	const result = randomKey( object );
+	test( "should return a string", () => expect( result ).toBeString() );
+	test( "should throw an error when not an object passing", () => {
+		expect( () => {
+			randomKey( 42 );
+		}).toThrow();
+	});
+});
+
+describe( "randomValue():", () => {
+	const object = {
+		"1": "One",
+		"2": "Two",
+		"3": "Three"
+	};
+	const result = randomValue( object );
+	test( "should return a string", () => expect( result ).toBeString() );
+	test( "should throw an error when not an object passing", () => {
+		expect( () => {
+			randomValue( 42 );
+		}).toThrow();
+	});
 });
 
