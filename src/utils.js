@@ -34,5 +34,24 @@ const shuffleArray = ( array ) => {
 // return only uniq Objects in Array, by object key
 const uniqObjectsInArray = ( array, key ) => [...new Map( array.map( item => [item[key], item]) ).values()];
 
+// random element from Array
+const randomElement = ( array ) => {
+	if ( typeof array !== "object" ) throw new Error( "Passed param is not an Array" );
+	const index = randomNumber( 0, array.length - 1 );
+	return array[index];
+};
 
-export { randomNumber, randomBool, randomId, uppercaseFirstLetter, shuffleArray, uniqObjectsInArray };
+// random key from Object
+const randomKey = ( object ) => {
+	if ( typeof object !== "object" ) throw new Error( "Passed param is not an Object" );
+	const keys = Object.keys( object );
+	return randomElement( keys );
+};
+
+// random value from Object
+const randomValue = ( object ) => {
+	if ( typeof object !== "object" ) throw new Error( "Passed param is not an Object" );
+	return object[randomKey( object )];
+};
+
+export { randomNumber, randomBool, randomId, uppercaseFirstLetter, shuffleArray, uniqObjectsInArray, randomElement, randomKey, randomValue };
