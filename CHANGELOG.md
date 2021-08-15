@@ -3,6 +3,7 @@
 ### :rocket: &nbsp; New Functions:
   * [randomElement()](https://github.com/g-modules/utils#randomelement)
   * [randomKey()](https://github.com/g-modules/utils#randomkey)
+  * [randomValue()](https://github.com/g-modules/utils#randomvalue)
 
 ---
 

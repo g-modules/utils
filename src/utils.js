@@ -48,4 +48,10 @@ const randomKey = ( object ) => {
 	return randomElement( keys );
 };
 
-export { randomNumber, randomBool, randomId, uppercaseFirstLetter, shuffleArray, uniqObjectsInArray, randomElement, randomKey };
+// random value from Object
+const randomValue = ( object ) => {
+	if ( typeof object !== "object" ) throw new Error( "Passed param is not an Object" );
+	return object[randomKey( object )];
+};
+
+export { randomNumber, randomBool, randomId, uppercaseFirstLetter, shuffleArray, uniqObjectsInArray, randomElement, randomKey, randomValue };

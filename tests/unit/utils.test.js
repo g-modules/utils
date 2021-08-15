@@ -1,5 +1,5 @@
 /* global describe, beforeEach, test, expect */
-import { randomNumber, randomBool, randomId, uppercaseFirstLetter, shuffleArray, uniqObjectsInArray, randomElement, randomKey } from "../../src/utils.js";
+import { randomNumber, randomBool, randomId, uppercaseFirstLetter, shuffleArray, uniqObjectsInArray, randomElement, randomKey, randomValue } from "../../src/utils.js";
 
 
 describe( "randomNumber():", () => {
@@ -115,6 +115,21 @@ describe( "randomKey():", () => {
 	test( "should throw an error when not an object passing", () => {
 		expect( () => {
 			randomKey( 42 );
+		}).toThrow();
+	});
+});
+
+describe( "randomValue():", () => {
+	const object = {
+		"1": "One",
+		"2": "Two",
+		"3": "Three"
+	};
+	const result = randomValue( object );
+	test( "should return a string", () => expect( result ).toBeString() );
+	test( "should throw an error when not an object passing", () => {
+		expect( () => {
+			randomValue( 42 );
 		}).toThrow();
 	});
 });

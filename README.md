@@ -148,5 +148,22 @@ const key = randomKey(object)
 console.log(key) //expect "1" or "2" or "3"
 ```
 
+---
+
+### randomValue()
+Return random value from Object.
+
+```js
+import { randomValue } from "@g-modules/utils";
+
+const object = {
+	"1": "One",
+	"2": "Two",
+	"3": "Three"
+};
+const value = randomValue(object)
+console.log(value) //expect "One" or "Two" or "Three"
+```
+
 ## Developing:
 Run `docker-compose up`
