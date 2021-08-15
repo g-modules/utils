@@ -1,4 +1,4 @@
-import { randomNumber, randomBool, randomId, uppercaseFirstLetter, shuffleArray, uniqObjectsInArray } from "./src/utils.js";
+import { randomNumber, randomBool, randomId, uppercaseFirstLetter, shuffleArray, uniqObjectsInArray, randomElement } from "./src/utils.js";
 
 export default {
 	randomNumber,
@@ -6,7 +6,8 @@ export default {
 	randomId,
 	uppercaseFirstLetter,
 	shuffleArray,
-	uniqObjectsInArray
+	uniqObjectsInArray,
+	randomElement
 };
 
-export { randomNumber, randomBool, randomId, uppercaseFirstLetter, shuffleArray, uniqObjectsInArray };
+export { randomNumber, randomBool, randomId, uppercaseFirstLetter, shuffleArray, uniqObjectsInArray, randomElement };

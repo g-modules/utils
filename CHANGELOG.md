@@ -1,3 +1,10 @@
+## 1.0.4 (2021-08-15)
+
+### :rocket: &nbsp; New Functions:
+  * [randomElement()](https://github.com/g-modules/utils#randomelement)
+
+---
+
 ## 1.0.3 (2021-08-12)
 
 ### :wrench: &nbsp; Minor Fixes

@@ -118,5 +118,18 @@ const uniq = uniqObjectsInArray(original, "text") // uniq be "text" key
 console.log(uniq) //expect [{ id: 3, text: 'hi!' }, { id: 2, text: 'hello' }
 ```
 
+---
+
+### randomElement()
+Return random element from Array.
+
+```js
+import { randomElement } from "@g-modules/utils";
+
+const array = ["Vue", "React", "Angular"]
+const element = randomElement(array)
+console.log(element) //expect Vue or React or Angular
+```
+
 ## Developing:
 Run `docker-compose up`
