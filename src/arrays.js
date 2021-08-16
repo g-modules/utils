@@ -11,6 +11,8 @@ const unique = ( array, key ) => {
 };
 
 
+
+
 // @Next -------------------------
 // mutable
 // array.unique()
@@ -23,7 +25,8 @@ const unique = ( array, key ) => {
 
 class Arrays {
 	constructor ( array ) {
-	  this.array = array;
+		if ( !Array.isArray( array ) ) throw new Error( "Passed param is not an Array" );
+		this.array = array;
 	}
 	shuffle () {
 		this.array.sort( () => Math.random() - 0.5 );
@@ -37,13 +40,27 @@ class Arrays {
 		this.array = this.array.filter( element => element );
 		return this;
 	}
+	sort (key) {
+		this.array = this.array.sort();
+		return this;
+	}
+	filter (key) {
+		this.array = this.array.filter( element => element === key );
+	}
+	  
 }
 
 
 const arrayFlat = [1, 2, 3, 2, 5];
-const mutable = new Arrays( arrayFlat );
-mutable.unique().shuffle().compact();
+const arrayObjects = [
+	{ name: 'Worf', series: 'Star Trek' },
+	{ name: 'Spock', series: 'Star Trek' },
+	{ name: 'Luke', series: 'Star Wars' },
+	{ name: 'Spock', series: 'Star Trek' }
+];
 
+const mutable = new Arrays( arrayObjects );
+mutable.unique();
 console.log( mutable.array );
 
 
